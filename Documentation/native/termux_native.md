@@ -14,8 +14,7 @@
 ---  
 <br>
 
-> [!NOTE]  
-> The process of setting up a Desktop Environment in Termux Native is described in this [video](https://www.youtube.com/watch?v=rq85dxMb7e4)
+
 
 <br>
 
@@ -68,8 +67,7 @@ https://github.com/termux/termux-packages
 ---  
 <br>
 
-## 💻 How to install apps inside Termux native desktop <a name=apps-termux-native></a> 
-### You have all the information to install apps inside your native Termux Desktop in this [video](https://www.youtube.com/watch?v=JCDAGNiuy3o)
+## 💻 How to install apps inside Termux native desktop <a name=apps-termux-native></a>
 
 ---
 <br>
@@ -79,7 +77,7 @@ https://github.com/termux/termux-packages
 ```
 cd ~
 
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/termux_native/startxfce4_termux.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/termux_native/startxfce4_termux.sh
 ```
 
 To start the desktop environment, run this
@@ -92,18 +90,17 @@ bash ~/startxfce4_termux.sh
 
 ## 💻 (Optional) Running Windows programs on Termux Native (XFCE Desktop + Mobox): <a name=mobox-with-desktop></a> 
 > [!IMPORTANT]  
-> This whole process is explained in the following [video](https://www.youtube.com/watch?v=SfCKHWUwAr0). I highly recommend looking at it first 
 
 
 First of all you need to install Mobox (follow instructions from the official repository): https://github.com/olegos2/mobox
 
-1. Configure your Termux native desktop. I recommend following the process described in this [video](https://www.youtube.com/watch?v=rq85dxMb7e4).
+1. Configure your Termux native desktop. 
 
 2. Download the following script into the `Desktop` folder. Thanks to the user `@Feer_C9` on [reddit](https://www.reddit.com/r/termux/comments/1bkzpzz/comment/kwwwxni/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) for this script
 
 * mobox_run.sh: 
 ```
-wget -P $HOME https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/termux_native/mobox_run.sh
+wget -P $HOME https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/termux_native/mobox_run.sh
 ```
 
 3. Give script execution permissions:
@@ -117,7 +114,7 @@ chmod +x mobox_run.sh
 This allows you to double click the shortcut in the Termux Desktop (for example XFCE4) and open Mobox explorer to run Windows programs or games.
 Be warned that some applications refuse to run using the explorer(Follow step 5 and "Common problems with mobox" to learn the proper way)
 ```
-wget -P $HOME/Desktop https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/termux_native/MoboxExplorer.desktop
+wget -P $HOME/Desktop https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/termux_native/MoboxExplorer.desktop
 ```
  
 5. Assuming you don't have a wine binary already, you can make a mobox_run.sh a symlink called wine.
@@ -140,7 +137,7 @@ wine PROGRAM.exe
 
 * **NOTE:** VERY RECENTLY, a bug was discovered in mobox_run.sh whereby it changed the directory back to home instead of being in the executable's directory which caused some applications to refuse to run. The bug was fixed so make sure to update your mobox_run.sh file using the following
 ```
-wget -P $HOME https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/termux_native/mobox_run.sh
+wget -P $HOME https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/termux_native/mobox_run.sh
 ``` 
 
 * Execute within a wine desktop environment. OG games in particular like to resize the screen's resolution when opening them. mobox doesn't change the resolution of the termux:x11 session so you need to start it within a wine desktop environment like this.(The caveat is that the resolution of the application you run won't be full at least up until a better solution is found)
@@ -216,7 +213,7 @@ You can also download this .desktop file in your desktop
 
 * Shutdown.desktop: 
 ```
-wget -P $HOME/Desktop https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/termux_native/Shutdown.desktop
+wget -P $HOME/Desktop https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/termux_native/Shutdown.desktop
 ```
 Double clicking on Shutdown.desktop will close the Termux X11 session immediately.
 
