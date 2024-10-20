@@ -14,8 +14,7 @@
 
 ## 🏁 First steps <a name=first-steps-ubuntu-proot></a>
 
-> [!NOTE]  
-> All the process is described in more detail in this [video](https://www.youtube.com/watch?v=_vxhzSG2zVQ).
+
 
 First you need to install the following packages in Termux: 
 ```
@@ -46,7 +45,7 @@ apt install sudo nano adduser -y
 ## ⬇️ Download scripts easily: <a name=easy-download-ubuntu-proot></a> 
 * startgnome_ubuntu.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_ubuntu/startgnome_ubuntu.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_ubuntu/startgnome_ubuntu.sh
 ```
 
 ---  
@@ -63,15 +62,14 @@ I have use the following [post](https://ivonblog.com/en-us/posts/termux-proot-di
 
 <br>
 
-> [!NOTE]  
-> All the process is described in more detail in this [video](https://www.youtube.com/watch?v=_vxhzSG2zVQ).
+
 
 <br>
 
 
 ```
 # Commands: 
-proot-distro login ubuntu --user droidmaster
+proot-distro login ubuntu --user roygoldfx
 ```
 ```
 sudo apt install dbus-x11 ubuntu-desktop -y
@@ -113,7 +111,7 @@ chmod +x startgnome_ubuntu.sh
 <summary><strong> Other desktosp (XFCE4, Mate, LXDE, etc) </strong></summary>
 <br>
 
-Follow the same [installation steps](https://github.com/LinuxDroidMaster/Termux-Desktops/blob/main/Documentation/proot/debian_proot.md#installing-desktops) as for Debian.
+Follow the same [installation steps](https://github.com/xcyber-star/Termux-Desktops/blob/main/Documentation/proot/debian_proot.md#installing-desktops) as for Debian.
 
 </details>  
 
