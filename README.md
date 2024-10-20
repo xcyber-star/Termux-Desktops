@@ -2,7 +2,7 @@
 
 Collection of scripts to launch Desktops with audio in Termux X11. You have also all the information needed to install your prefered Linux Distro and connect to it in the following steps. 
 
-### ⚠️ If you want to see the information as it was before the update (as shown in most of the videos) check this out: [README_old.md](README_old.md)
+### ⚠️ If you want to see the information as it was before the update check this out: [README_old.md](README_old.md)
 
 
 
