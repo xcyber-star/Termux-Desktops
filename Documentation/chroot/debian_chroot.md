@@ -215,7 +215,7 @@ busybox chroot $DEBIANPATH /bin/su - roygoldfx -c 'export DISPLAY=:0 && export P
 
 12. Let's run the Desktop Environment. Exit chroot environment and copy the following commands on Termux (you can close everything an reopen Termux to be sure you are outside chroot). 
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/chroot/debian/startxfce4_chrootDebian.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/chroot/debian/startxfce4_chrootDebian.sh
 
 chmod +x startxfce4_chrootDebian.sh
 ./startxfce4_chrootDebian.sh
