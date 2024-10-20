@@ -1,7 +1,6 @@
 # 📚 Index
 
-> [!NOTE]  
-> All the process is described in more detail in this [video](https://youtu.be/G5fJCuKMiVQ?si=pLezKNivGVYsc1Bw).
+
 
 ## PROOT-DISTRO (⏫ POSTMARKET)
 * 🏁 [First steps](#first-steps-postmarket-proot)
@@ -79,7 +78,7 @@ LOGO="postmarketos-logo"' > /etc/os-release
 
 * startkde_postmarket.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_postmarket/startkde_postmarket.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_postmarket/startkde_postmarket.sh
 chmod +x startkde_postmarket.sh
 ./startkde_postmarket.sh
 ```
