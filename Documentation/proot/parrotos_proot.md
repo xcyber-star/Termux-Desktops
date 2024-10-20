@@ -1,7 +1,6 @@
 # 📚 Index
 
-> [!NOTE]  
-> All the process is described in more detail in this [video](https://www.youtube.com/watch?v=sB0O1UMuuoA).
+
 
 ## PROOT-DISTRO (🦜 PARROT OS)
 * 🏁 [First steps](#first-steps-parrot-proot)
@@ -19,12 +18,12 @@ pkg install pulseaudio
 pkg install proot-distro
 ```
 
-* Then we are going to follow the steps describede here: https://github.com/LinuxDroidMaster/parrotOS-GUI-proot
+* Then we are going to follow the steps describede here: https://github.com/xcyber-star/parrotOS-GUI-proot
 
 ```
 pkg update -y && pkg upgrade -y
 pkg install git wget -y
-git clone https://github.com/LinuxDroidMaster/parrotOS-GUI-proot
+git clone https://github.com/xcyber-star/parrotOS-GUI-proot
 cd parrotOS-GUI-proot
 chmod +x setup-parrot-cli
 ./setup-parrot-cli
@@ -56,7 +55,7 @@ apt install parrot-desktop-mate
 
 * startxfce4_parrot.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_parrot/startxfce4_parrot.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_parrot/startxfce4_parrot.sh
 chmod +x startxfce4_parrot.sh
 ./startxfce4_parrot.sh
 ```
