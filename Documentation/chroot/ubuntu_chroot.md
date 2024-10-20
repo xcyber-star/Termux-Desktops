@@ -16,8 +16,7 @@
 
 <br>
 
-> [!NOTE]  
-> All the process is described in this [video](https://www.youtube.com/watch?v=rYJaG0uFtdc)
+
 
 ## 🏁 First steps <a name=first-steps-chroot></a>
 
@@ -130,12 +129,12 @@ apt install nano vim net-tools sudo git
 ln -sf /usr/share/zoneinfo/Europe/Madrid /etc/localtime
 ```
 
-9. Create a new user called `droidmaster` (or the name you prefer)
+9. Create a new user called `roygoldfx` (or the name you prefer)
 ```
 groupadd storage
 groupadd wheel
-useradd -m -g users -G wheel,audio,video,storage,aid_inet -s /bin/bash droidmaster
-passwd droidmaster
+useradd -m -g users -G wheel,audio,video,storage,aid_inet -s /bin/bash roygoldfx
+passwd 123456
 ```
 
 10. Add the created user to sudoers file to have superuser privileges: 
@@ -144,7 +143,7 @@ nano /etc/sudoers
 ```
 Add this line: 
 ```
-droidmaster ALL=(ALL:ALL) ALL
+roygoldfx ALL=(ALL:ALL) ALL
 ```
 
 11. Switch to the created user: 
