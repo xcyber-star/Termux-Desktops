@@ -4,7 +4,6 @@ Collection of scripts to launch Desktops with audio in Termux X11. You have also
 
 ### ⚠️ If you want to see the information as it was before the update (as shown in most of the videos) check this out: [README_old.md](README_old.md)
 
-### You can see it all explained on my Youtube channel: [LinuxDroidMaster](https://www.youtube.com/@LinuxDroidMaster/videos)
 
 
 
@@ -14,7 +13,7 @@ Collection of scripts to launch Desktops with audio in Termux X11. You have also
 * 🐧 [How to install proot distributions: Alpine, Ubuntu, Debian, Arch, Kali Nethunter, Parrot OS, PostMarket OS](#proot-distributions)
 * 💀 [How to install Chroot distributions: Ubuntu, Debian, Box64Droid](#chroot-distributions)
 * 💻 [How to install Termux Native Desktop](#termux-native)
-* 🔥 [Hardware acceleration in Termux](https://github.com/LinuxDroidMaster/Termux-Desktops/blob/main/Documentation/HardwareAcceleration.md)
+* 🔥 [Hardware acceleration in Termux](https://github.com/xcyber-star/Termux-Desktops/blob/main/Documentation/HardwareAcceleration.md)
 
 <br>
 <br>  
@@ -38,8 +37,7 @@ All environments are configured with XFCE4 Desktop but you can change it
 # 🏁 First steps <a name=first-steps></a>
 We are going to use Termux and Termux X11 in order to have a full Linux Desktop in our Android devices. 
 
-* [[Video] How to install Termux](https://www.youtube.com/watch?v=OMJAyq5NHp0)
-* [[Video] How to install and use Termux X11](https://www.youtube.com/watch?v=mXkXzFqSeYE)
+
 
 Basic packages you need to install on Termux: 
 
@@ -64,19 +62,19 @@ When setting up Linux on your Android device, you have several options to choose
 
 ### [1. Termux Native](#termux-native)
 
-- Main video: [Termux native Desktop](https://www.youtube.com/watch?v=rq85dxMb7e4)
+
 
 Termux native refers to running Linux commands directly within the Termux app without any additional virtualization or containerization. It provides a lightweight and straightforward way to access Linux utilities on your Android device.
 
 ### [2. Proot-Distro](#proot-distro)
 
-- Main video: [Debian proot and basic Termux X11 installation](https://www.youtube.com/watch?v=mXkXzFqSeYE)
+
 
 Proot-Distro is a method that utilizes `proot` (PRoot is a user-space implementation of chroot, mount --bind, and binfmt_misc) to run a full Linux distribution inside a chroot environment. This approach allows you to install and use a wide range of Linux distributions without root access. However, it may have some limitations compared to native installations.
 
 ### [3. Chroot](#chroot)
 
-- Main video: [Debian Chroot](https://www.youtube.com/watch?v=EDjKBme0DRI)
+
 
 Chroot is a Unix command that changes the apparent root directory for the current running process and its children. In the context of running Linux on Android, chroot is often used to create a separate Linux environment alongside the Android system. While it provides a more isolated environment compared to Termux native, it may require more advanced setup and additional tools.
 
