@@ -18,8 +18,7 @@
 
 <br>
 
-> [!NOTE]  
-> All the process is described in this [video](https://www.youtube.com/watch?v=EDjKBme0DRI)
+
 
 ## 🏁 First steps <a name=first-steps-chroot></a>
 
@@ -48,7 +47,7 @@ Please read first [#First Steps section](#first-steps-chroot)
 
 * Download the installer with this command: 
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/chroot/debian/chroot_debian_installer.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/chroot/debian/chroot_debian_installer.sh
 ```
 
 * Run it with sudo privileges from Termux: 
@@ -65,7 +64,7 @@ sh chroot_debian_installer.sh
 
 * startxfce4_chrootDebian.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/chroot/debian/startxfce4_chrootDebian.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/chroot/debian/startxfce4_chrootDebian.sh
 ```
 
 ---  
@@ -76,7 +75,7 @@ wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scr
 
 * Download Debian 12 rootfs:
 ```
-wget https://github.com/LinuxDroidMaster/Termux-Desktops/releases/download/Debian/debian12-arm64.tar.gz
+wget https://github.com/xcyber-star/Termux-Desktops/releases/download/Debian/debian12-arm64.tar.gz
 ```
 ---  
 <br>
@@ -116,7 +115,7 @@ cd /data/local/tmp/chrootDebian
 
 3. Download Debian 12 rootfs: 
 ```
-wget https://github.com/LinuxDroidMaster/Termux-Desktops/releases/download/Debian/debian12-arm64.tar.gz
+wget https://github.com/xcyber-star/Termux-Desktops/releases/download/Debian/debian12-arm64.tar.gz
 ```
 
 4. Unzip the downloaded file and create some folders to mount the sdcard
@@ -182,12 +181,12 @@ apt upgrade
 apt install nano vim net-tools sudo git
 ```
 
-8. Create a new user called `droidmaster` (or the name you prefer)
+8. Create a new user called `roygoldfx` (or the name you prefer)
 ```
 groupadd storage
 groupadd wheel
-useradd -m -g users -G wheel,audio,video,storage,aid_inet -s /bin/bash droidmaster
-passwd droidmaster
+useradd -m -g users -G wheel,audio,video,storage,aid_inet -s /bin/bash roygoldfx
+passwd 123456
 ```
 
 9. Add the created user to sudoers file to have superuser privileges: 
@@ -196,7 +195,7 @@ nano /etc/sudoers
 ```
 Add this line: 
 ```
-droidmaster ALL=(ALL:ALL) ALL
+roygoldfx ALL=(ALL:ALL) ALL
 ```
 
 10. Install Desktop Environment: 
@@ -211,7 +210,7 @@ vi /data/local/tmp/start_debian.sh
 ```
 Change the last line `busybox chroot $DEBIANPATH /bin/su - root` to this line: 
 ```
-busybox chroot $DEBIANPATH /bin/su - droidmaster -c 'export DISPLAY=:0 && export PULSE_SERVER=127.0.0.1 && dbus-launch --exit-with-session startxfce4'
+busybox chroot $DEBIANPATH /bin/su - roygoldfx -c 'export DISPLAY=:0 && export PULSE_SERVER=127.0.0.1 && dbus-launch --exit-with-session startxfce4'
 ```
 
 12. Let's run the Desktop Environment. Exit chroot environment and copy the following commands on Termux (you can close everything an reopen Termux to be sure you are outside chroot). 
