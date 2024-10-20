@@ -1,7 +1,6 @@
 # 📚 Index
 
-> [!NOTE]  
-> All the process is described in more detail in this [video](https://youtu.be/9_xUs6CEtVc?si=0HMJ795uduwTvgEc).
+
 
 ## PROOT-DISTRO (⛰️ ALPINE)
 * 🏁 [First steps](#first-steps-alpine-proot)
@@ -43,11 +42,11 @@ apk add sudo nano dbus-x11 xfce4
 
 * Create a new user and give it sudo privileges: 
 ```
-adduser droidmaster
+adduser roygoldfx
 nano /etc/sudoers
 
 # Add the following line to the sudoers file
-droidmaster All=(ALL:ALL) ALL
+roygoldfx All=(ALL:ALL) ALL
 ```
 
 * If you want to install chromium: 
@@ -63,7 +62,7 @@ apk add chromium
 
 * startxfce4_alpine.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_alpine/startxfce4_alpine.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_alpine/startxfce4_alpine.sh
 chmod +x startxfce4_alpine.sh
 ./startxfce4_alpine.sh
 ```
