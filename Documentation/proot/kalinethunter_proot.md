@@ -1,7 +1,5 @@
 # 📚 Index
 
-> [!NOTE]  
-> All the process is described in more detail in this [video](https://www.youtube.com/watch?v=TbjhxnaCFjs).
 
 
 ## PROOT-DISTRO (🐉 KALI LINUX NETHUNTER)
@@ -79,5 +77,5 @@ cmdline="proot \
 
 * startxfce4_nethunter.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_kali/startxfce4_nethunter.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_kali/startxfce4_nethunter.sh
 ```
