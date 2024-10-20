@@ -149,12 +149,12 @@ pacman -Syu
 pacman -S vim net-tools sudo git
 ```
 
-- **Create a new user, in this case `droidmaster`**
+- **Create a new user, in this case `roygoldfx`**
 ```
 groupadd storage
 groupadd wheel
-useradd -m -g users -G wheel,audio,video,storage,aid_inet -s /bin/bash droidmaster
-passwd droidmaster
+useradd -m -g users -G wheel,audio,video,storage,aid_inet -s /bin/bash roygoldfx
+passwd 123456
 ```
 
 - Add the user to `sudoers` file so you can execute `sudo` commands
@@ -163,7 +163,7 @@ nano /etc/sudoers
 ```
 ```
 # Paste this 
-droidmaster  ALL=(ALL:ALL) ALL
+roygoldfx  ALL=(ALL:ALL) ALL
 ```
 
 - **Fix locales to avoid weird characters:**
@@ -191,12 +191,12 @@ sudo pacman -S xfce4 xfce4-terminal
 vi start_arch.sh
 
 #busybox chroot $mnt /bin/su - root
-busybox chroot $mnt /bin/su - droidmaster -c "export DISPLAY=:0 PULSE_SERVER=tcp:127.0.0.1:4713 && dbus-launch --exit-with-session startxfce4"
+busybox chroot $mnt /bin/su - roygoldfx -c "export DISPLAY=:0 PULSE_SERVER=tcp:127.0.0.1:4713 && dbus-launch --exit-with-session startxfce4"
 ```
 
 - **Let's run the Desktop Environment. Exit chroot environment and copy the following commands on Termux (you can close everything an reopen Termux to be sure you are outside chroot).** 
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/chroot/arch/startxfce4_chrootArch.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/chroot/arch/startxfce4_chrootArch.sh
 
 chmod +x startxfce4_chrootArch.sh
 ./startxfce4_chrootArch.sh
