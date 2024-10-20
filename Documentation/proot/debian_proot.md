@@ -17,11 +17,9 @@
 ## 🏁 First steps <a name=first-steps></a>
 We are going to use Termux and Termux X11 in order to have a full Linux Desktop in our Android devices. 
 
-* [[Video] How to install Termux](https://www.youtube.com/watch?v=OMJAyq5NHp0)
 
-* [[Video] How to install and use Termux X11](https://www.youtube.com/watch?v=mXkXzFqSeYE)
 
-* [[Video] How to install a COMPLETE Linux environtment on ANDROID - Customizing XFCE4 - Neon theme - No Root](https://www.youtube.com/watch?v=rDHyPw_7ETs)
+
 
 <details>
 <summary><strong> [Commands] How to install a Linux Distro on Termux with proot-distro (No Root)</strong></summary>
@@ -56,14 +54,14 @@ apt install sudo nano adduser -y
 ```
 2. Create an user
 ```
-adduser droidmaster
+adduser roygoldfx
 ```
 3. Give the user sudo privileges
 ```
 nano /etc/sudoers
 
 # Add the following line to the file
-droidmaster ALL=(ALL:ALL) ALL
+roygoldfx ALL=(ALL:ALL) ALL
 ```
 4. Check you can execute sudo commands (it should return `root`)
 ```
@@ -79,41 +77,39 @@ sudo whoami
 
 I have installed different desktops, if you want me to test any other just leave a comment in any video and I will check it: 
 
-> [!NOTE]
-> In the videos I'm using VNC but with Termux X11 installing the tigervnc server and dbus is no longer required.
 
-* [[Video] How to install XFCE4](https://www.youtube.com/watch?v=LO8LWh5tPg8&list=PL4worxVHtqXo8EPHfLcoy5tPwjVSaqdB5&index=6)
+
 
 ```
 # Commands: 
-proot-distro login debian --user droidmaster
+proot-distro login debian --user roygoldfx
 ```
 ```
 sudo apt install xfce4
 ```
 
-* [[Video] How to install LXDE](https://www.youtube.com/watch?v=9b9_9YNsCXc)
+* [How to install LXDE]
 ```
 # Commands: 
-proot-distro login debian --user droidmaster
+proot-distro login debian --user roygoldfx
 ```
 ```
 sudo apt install lxde
 ```
 
-* [[Video] How to install Cinnamon](https://youtu.be/_wZO5RZu2R8?feature=shared)
+* [ How to install Cinnamon]
 ```
 # Commands: 
-proot-distro login debian --user droidmaster
+proot-distro login debian --user roygoldfx
 ```
 ```
 sudo apt install cinnamon -y
 ```
 
-* [[Video] How to install GNOME](https://www.youtube.com/watch?v=XedxyTTHYnI)
+* [How to install GNOME]
 ```
 # Commands: 
-proot-distro login debian --user droidmaster
+proot-distro login debian --user roygoldfx
 ```
 ```
 sudo apt install dbus-x11 nano gnome gnome-shell gnome-terminal gnome-tweaks gnome-software nautilus gnome-shell-extension-manager gedit tigervnc-tools gnupg2 -y
@@ -123,10 +119,10 @@ for file in $(find /usr -type f -iname "*login1*"); do rm -rf $file
 done
 ```
 
-* [[Video] How to install KDE Plasma](https://www.youtube.com/watch?v=fru4SWvUowI&list=PL4worxVHtqXo8EPHfLcoy5tPwjVSaqdB5&index=2)  - Not recommended due to performance issues (KDE Plasma requires more resources)
+* [How to install KDE Plasma]- Not recommended due to performance issues (KDE Plasma requires more resources)
 ```
 # Commands: 
-proot-distro login debian --user droidmaster
+proot-distro login debian --user roygoldfx
 ```
 ```
 sudo apt install kde-plasma-desktop
@@ -159,40 +155,37 @@ chmod +x startxfce4_debian.sh
 ## ⬇️ Download scripts easily: <a name=easy-download></a> 
 
 > [!NOTE]  
-> By default this script works with the user "droidmaster". If you create a user with a different name in proot-distro, please change where it says "droidmaster" inside the scripts.
+> By default this script works with the user "roygoldfx". If you create a user with a different name in proot-distro, please change where it says "roygoldfx" inside the scripts.
 
 * startgnome_debian.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_debian/startgnome_debian.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_debian/startgnome_debian.sh
 ```
 
 * startxfce4_debian.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_debian/startxfce4_debian.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_debian/startxfce4_debian.sh
 ```
 
 * startlxde_debian.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_debian/startlxde_debian.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_debian/startlxde_debian.sh
 ```
 
 * startcinnamon_debian.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_debian/startcinnamon_debian.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_debian/startcinnamon_debian.sh
 ```
 
 * startkde_debian.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_debian/startkde_debian.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_debian/startkde_debian.sh
 ```
 ---  
 <br>
 
 ## 🎨 Customizations <a name=customizations></a>
 
-* Customization videos: 
-    * [How to customize XFCE4 - Neon Theme](https://www.youtube.com/watch?v=rDHyPw_7ETs)
-    * [How to fully customize XFCE4 from scratch (new dock, menu, etc)](https://youtu.be/REv67sQp7aY?feature=shared)
 
 
 * How to install nerd fonts (this allows you to have icons in the terminal):
