@@ -1,7 +1,6 @@
 # 📚 Index
 
-> [!NOTE]  
-> All the process is described in more detail in this [video - pending]().
+
 
 ## PROOT-DISTRO (🌌 VOID)
 * 🏁 [First steps](#first-steps-void-proot)
@@ -48,13 +47,13 @@ xbps-install lxde xfce4 xfce4-terminal
 
 * Create a new user and give it sudo privileges: 
 ```
-useradd droidmaster
-passwd droidmaster
+useradd roygoldfx
+passwd 123456
 
 nano /etc/sudoers
 
 # Add the following line to the sudoers file
-droidmaster All=(ALL:ALL) ALL
+roygoldfx All=(ALL:ALL) ALL
 ```
 
 * If you want to install Chromium or Firefox: 
@@ -75,7 +74,7 @@ xbps-install nerd-fonts
 
 * startxfce4_void.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_void/startxfce4_void.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_void/startxfce4_void.sh
 chmod +x startxfce4_void.sh
 ./startxfce4_void.sh
 ```
