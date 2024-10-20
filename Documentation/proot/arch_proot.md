@@ -14,8 +14,7 @@
 <br>
 
 ## 🏁 First steps <a name=first-steps-arch></a>
-> [!NOTE]  
-> All the process is described in more detail in this [video](https://www.youtube.com/watch?v=21yeQ1yMI0o).
+
 
 First you need to install the following packages in Termux: 
 ```
@@ -45,8 +44,7 @@ pacman -S xfce4
 <br>
 
 ## 💻 How to install KDE Plasma Desktop <a name=kde-arch></a> 
-> [!NOTE]  
-> All the process is described in more detail in this [video](https://youtu.be/0PX3I1zLqlY?si=wc43q_5miQWGOns3).
+
 
 
 1. Follow first steps
@@ -61,8 +59,8 @@ pacman -S plasma-desktop sudo dbus kde-applications kde-graphics kde-utilities k
 ```
 * Add a new user and set a password
 ```
-useradd -m -G wheel droidmaster
-passwd droidmaster
+useradd -m -G wheel roygoldfx
+passwd 123456
 ```
 * Give sudo permissions to the user
 ```
@@ -70,15 +68,14 @@ nano /etc/sudoers
 ```
 ```
 # Paste the following line
-droidmaster ALL=(ALL) ALL
+roygoldfx ALL=(ALL) ALL
 ```
 
 ---  
 <br>
 
 ## 💻 How to install GNOME Desktop <a name=gnome-arch></a> 
-> [!NOTE]  
-> All the process is described in more detail in this [video](https://youtu.be/fiJgjlbRQn4?si=ZnXwQ1805pJl5VrE).
+
 
 **Thanks to the user [@Windows1105](https://www.reddit.com/user/Windows1105/) for [this post in reddit](https://www.reddit.com/r/termux/comments/1bo10lb/fedora_rawhide_with_gnome_46_updated_installation/)**
 
@@ -101,8 +98,8 @@ find /usr -type f -iname "*login1*" -exec rm -f {} \; && mkdir /run/dbus
 
 4. Add a new user and set a password
 ```
-useradd -m -G wheel droidmaster
-passwd droidmaster
+useradd -m -G wheel roygoldfx
+passwd 123456
 ```
 * Give sudo permissions to the user
 ```
@@ -110,7 +107,7 @@ nano /etc/sudoers
 ```
 ```
 # Paste the following line
-droidmaster ALL=(ALL) ALL
+roygoldfx ALL=(ALL) ALL
 ```
 
 5. Customize GNOME: 
@@ -141,19 +138,19 @@ pacman -Sy epapirus-icon-theme # To install an icon pack form the previous list
 ## ⬇️ Download scripts easily: <a name=easy-download-arch></a> 
 
 > [!NOTE]  
-> By default this script works with the user `droidmaster`. If you create a user with a different name in proot-distro, please change where it says `droidmaster` inside the scripts. And remember to give execution permissions to the script with `chmod +x scriptName.sh`
+> By default this script works with the user `roygoldfx`. If you create a user with a different name in proot-distro, please change where it says `roygoldfx` inside the scripts. And remember to give execution permissions to the script with `chmod +x scriptName.sh`
 
 * startxfce4_arch.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_arch/startxfce4_arch.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_arch/startxfce4_arch.sh
 ```
 
 * startkde_arch.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_arch/startkde_arch.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_arch/startkde_arch.sh
 ```
 
 * startgnome_arch.sh
 ```
-wget https://raw.githubusercontent.com/LinuxDroidMaster/Termux-Desktops/main/scripts/proot_arch/startgnome_arch.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_arch/startgnome_arch.sh
 ```
