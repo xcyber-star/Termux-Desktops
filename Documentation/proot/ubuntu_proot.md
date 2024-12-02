@@ -49,7 +49,7 @@ wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/
 ```
 * startlxde_ubuntu.sh
 ```
-wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktop/main/scripts/proot_ubuntu/startlxde_ubuntu.sh
+wget https://raw.githubusercontent.com/xcyber-star/Termux-Desktops/main/scripts/proot_ubuntu/startlxde_ubuntu.sh
 ```
 ---  
 <br>
